@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 const express = require("express");
 const morgan = require("morgan");
-const cors = require("cors");
+//const cors = require("cors");
 require("dotenv").config();
 
 // app
@@ -11,7 +11,7 @@ const app = express();
 // db connection
 
 // middlewares
-app.use(cors({ origin: true, credentials: true }));
+//app.use(cors({ origin: true, credentials: true }));
 app.use(morgan("dev"));
 
 // routes
